@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
+=======
+import React, { useEffect,useState } from "react";
+>>>>>>> origin/mahip
 import PhoneDisplayStatic from "../PhoneDisplay/PhoneDisplayStatic";
 import "./ChatInput.sass";
 import { Link, useNavigate } from "react-router-dom";
@@ -25,6 +29,38 @@ export default function ChatInput() {
         }
       });
   }
+<<<<<<< HEAD
+=======
+  const history = useNavigate();
+  const token = localStorage.getItem("jwt");
+
+  const callDash = async () => {
+    try {
+      const url = "/authenticate";
+      axios
+        .post(url, {
+          token: token,
+        })
+        .then((res) => {
+          console.log(res);
+          if (res.status === 202) {
+            console.log("hello");
+            history("/login");
+         
+            const error = new Error(res.error);
+            throw error;
+          }
+        });
+    } catch (error) {
+      
+      console.log("hello");
+    }
+  };
+
+  useEffect(() => {
+    callDash();
+  }, []);
+>>>>>>> origin/mahip
   return (
     <div className="ChatInput">
       <div className="InputSection">

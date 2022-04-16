@@ -28,10 +28,18 @@ function Login() {
         password2: password2,
       })
       .then((res) => {
+<<<<<<< HEAD
         console.log("data send" + name);
         if (res.data.error !== "") {
           history("/signup");
           setMessage(res.data.error);
+=======
+        console.log(res.data);
+      
+        if (res.status=== 221) {
+          history("/login");
+          setMessage(res.data);
+>>>>>>> origin/mahip
         } else {
           history("/");
         }
@@ -47,11 +55,24 @@ function Login() {
         password: password,
       })
       .then((res) => {
+<<<<<<< HEAD
         console.log("Data sent");
         if (res.data.error !== "") {
           setMessage(res.data.error);
         } else {
           history.push("/");
+=======
+        const token =res.data.token;
+        console.log(token);
+        
+        console.log(res.data);
+        if (res.status===221 ) {
+          setMessage(res.data);
+        } else {
+          history("/");
+          localStorage.setItem("jwt", token);
+          
+>>>>>>> origin/mahip
         }
       });
   };
@@ -85,6 +106,7 @@ function Login() {
   const responsefailureGoogle = (res) => {
     console.log(res);
   };
+<<<<<<< HEAD
   const responseFacebook = (res) => {};
 
   return (
@@ -193,6 +215,11 @@ function Login() {
     //     </div>
     //   </div>
     // </div>
+=======
+
+
+  return (
+>>>>>>> origin/mahip
 
     <div className="LoginPage">
       <div className="Components">
@@ -235,6 +262,7 @@ function Login() {
               cookiePolicy={"single_host_origin"}
             />
           </div>
+<<<<<<< HEAD
           <div>
             <FacebookLogin
               appId="284465773762397"
@@ -242,6 +270,10 @@ function Login() {
               callback={responseFacebook}
             />
           </div>
+=======
+         
+          
+>>>>>>> origin/mahip
         </div>
         <div className="Register">
           <h1>Signup</h1>

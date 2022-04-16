@@ -20,6 +20,10 @@
     "react-scripts": "5.0.0",
     "react-three-fiber": "^6.0.13",
     "sass": "^1.49.9",
+<<<<<<< HEAD
+=======
+    "three": "^0.138.3",
+>>>>>>> origin/mahip
     "web-vitals": "^2.1.4"
   },
   "scripts": {

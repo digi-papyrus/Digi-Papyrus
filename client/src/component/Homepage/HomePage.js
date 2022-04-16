@@ -38,7 +38,11 @@ export default function HomePage() {
   useEffect(() => {
     axios.get("http://localhost:5000/api/fetchChat").then((res) => {
       setChats(res.data);
+<<<<<<< HEAD
       console.log(res.data);
+=======
+      
+>>>>>>> origin/mahip
     });
   }, []);
 
@@ -54,14 +58,25 @@ export default function HomePage() {
         })
         .then((res) => {
           console.log(res);
+<<<<<<< HEAD
           if (res.status !== 200) {
             console.log("hello");
             history("/login");
+=======
+          if (res.status === 202) {
+            console.log("hello");
+            history("/login");
+         
+>>>>>>> origin/mahip
             const error = new Error(res.error);
             throw error;
           }
         });
     } catch (error) {
+<<<<<<< HEAD
+=======
+      
+>>>>>>> origin/mahip
       console.log("hello");
     }
   };
