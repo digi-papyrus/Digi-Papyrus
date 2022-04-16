@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-=======
 import React, { useEffect,useState } from "react";
->>>>>>> origin/mahip
 import PhoneDisplayStatic from "../PhoneDisplay/PhoneDisplayStatic";
 import "./ChatInput.sass";
 import { Link, useNavigate } from "react-router-dom";
@@ -29,8 +25,6 @@ export default function ChatInput() {
         }
       });
   }
-<<<<<<< HEAD
-=======
   const history = useNavigate();
   const token = localStorage.getItem("jwt");
 
@@ -60,7 +54,6 @@ export default function ChatInput() {
   useEffect(() => {
     callDash();
   }, []);
->>>>>>> origin/mahip
   return (
     <div className="ChatInput">
       <div className="InputSection">

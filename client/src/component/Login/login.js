@@ -28,18 +28,11 @@ function Login() {
         password2: password2,
       })
       .then((res) => {
-<<<<<<< HEAD
-        console.log("data send" + name);
-        if (res.data.error !== "") {
-          history("/signup");
-          setMessage(res.data.error);
-=======
         console.log(res.data);
       
         if (res.status=== 221) {
           history("/login");
           setMessage(res.data);
->>>>>>> origin/mahip
         } else {
           history("/");
         }
@@ -55,13 +48,6 @@ function Login() {
         password: password,
       })
       .then((res) => {
-<<<<<<< HEAD
-        console.log("Data sent");
-        if (res.data.error !== "") {
-          setMessage(res.data.error);
-        } else {
-          history.push("/");
-=======
         const token =res.data.token;
         console.log(token);
         
@@ -72,7 +58,6 @@ function Login() {
           history("/");
           localStorage.setItem("jwt", token);
           
->>>>>>> origin/mahip
         }
       });
   };
@@ -106,120 +91,9 @@ function Login() {
   const responsefailureGoogle = (res) => {
     console.log(res);
   };
-<<<<<<< HEAD
-  const responseFacebook = (res) => {};
-
-  return (
-    // <div className={divname}>
-    //   <div className="login">
-    //     <div className="registered">
-    //       <div className="text">
-    //         <h1>Log-IN</h1>
-    //       </div>
-    //       <div className="inputboxwithlabel">
-    //         {/* <p>Username: </p> */}
-    //     <input
-    //       type="textbox"
-    //       placeholder="Username"
-    //       onChange={(event) => {
-    //         setusername(event.target.value);
-    //       }}
-    //     />
-    //   </div>
-    //   <input
-    //     type="password"
-    //     placeholder="Password"
-    //     onChange={(event) => {
-    //       setpassword(event.target.value);
-    //     }}
-    //   />
-    //   <p className="forgot">
-    //     If you have forgotten your password,
-    //     <Link className="link" to="/forget">
-    //       click here!
-    //     </Link>{" "}
-    //   </p>
-    //   <p style={{ color: "red" }}> {message} </p>
-    //   {/* <Link to="/"> */}
-    //   <button className="sumbit" onClick={loginPostdata}>
-    //     Login
-    //   </button>
-    //       {/* </Link> */}
-    //     </div>
-
-    //     {/* <div className="new">
-    //   <div className="text">
-    //     <h1>Signup </h1>
-    //     <h1>into</h1>
-    //     <h1>Digi-Papyrus</h1>
-    //     <p>Think Opening Imagination as you turn the pages of book !</p>
-    //   </div>
-
-    //       <button onClick={Pressed}>Register now</button>
-    //     </div> */}
-    //   </div>
-
-    //   <div className="signup">
-    //     {/* <div className="registeredCustomer">
-    //   <div className="text">
-    //     <h1>LOGIN </h1>
-    //     <h1>Into</h1>
-    //     <h1>Digi-Papyrus</h1>
-    //     <p>Think Opening Imagination as you turn the pages of book !</p>
-    //   </div>
-
-    //       <button onClick={Pressed}>Login Now</button>
-    //     </div> */}
-
-    //     <div className="newCustomer">
-    //       <div className="text">
-    //         <h1>New Customer</h1>
-    //       </div>
-
-    //   <input
-    //     type="textbox"
-    //     placeholder="Name"
-    //     onChange={(event) => {
-    //       setname(event.target.value);
-    //     }}
-    //     required
-    //   />
-    //   <input
-    //     type="email"
-    //     placeholder="Email Address"
-    //     onChange={(event) => {
-    //       setemail(event.target.value);
-    //     }}
-    //     required
-    //   />
-    //   <input
-    //     type="password"
-    //     placeholder="Password"
-    //     onChange={(event) => {
-    //       setpassword(event.target.value);
-    //     }}
-    //     required
-    //   />
-    //   <input
-    //     type="password"
-    //     placeholder="Confirm Password"
-    //     onChange={(event) => {
-    //       setpassword2(event.target.value);
-    //     }}
-    //   />
-    //   <p style={{ color: "red" }}> {message} </p>
-
-    //   <button onClick={addtolist} className="sumbit">
-    //     Continue
-    //   </button>
-    //     </div>
-    //   </div>
-    // </div>
-=======
 
 
   return (
->>>>>>> origin/mahip
 
     <div className="LoginPage">
       <div className="Components">
@@ -262,18 +136,8 @@ function Login() {
               cookiePolicy={"single_host_origin"}
             />
           </div>
-<<<<<<< HEAD
-          <div>
-            <FacebookLogin
-              appId="284465773762397"
-              autoLoad={false}
-              callback={responseFacebook}
-            />
-          </div>
-=======
          
           
->>>>>>> origin/mahip
         </div>
         <div className="Register">
           <h1>Signup</h1>
