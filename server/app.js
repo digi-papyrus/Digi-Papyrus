@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+const path = require("path");
 const app = express();
 require("dotenv").config({ path: "/config.env" });
 URL =
@@ -15,7 +16,10 @@ app.use(
 );
 app.use(cookieParser());
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname, "../server/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../server/build"));
+});
 app.use("/", require("./routes/user"));
 app.use("/", require("./routes/oauth"));
 // app.use("/",require("./middleware/auth"));
