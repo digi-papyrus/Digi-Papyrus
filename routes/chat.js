@@ -24,7 +24,6 @@ router.post("/api/individualChat", async (req, res) => {
   let id = req.body.id;
   Chat.findById(id, async (err, chat) => {
     if (err) {
-      console.log(err);
     } else if (!chat) {
       res.status(400).json("Chat Not Found");
     } else {
