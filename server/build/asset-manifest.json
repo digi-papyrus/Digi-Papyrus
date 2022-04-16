@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6717e465.css",
+    "main.js": "/static/js/main.99879bd1.js",
+    "static/js/787.e63222a2.chunk.js": "/static/js/787.e63222a2.chunk.js",
+    "static/media/nirjal.png": "/static/media/nirjal.c23fc610d316e6aceebf.png",
+    "static/media/nigam.jpg": "/static/media/nigam.67204b8e8f717842be5e.jpg",
+    "static/media/mahip.jpg": "/static/media/mahip.74c8d7c990bea87be30d.jpg",
+    "static/media/team.jpg": "/static/media/team.49270dc085071829b9da.jpg",
+    "index.html": "/index.html",
+    "main.6717e465.css.map": "/static/css/main.6717e465.css.map",
+    "main.99879bd1.js.map": "/static/js/main.99879bd1.js.map",
+    "787.e63222a2.chunk.js.map": "/static/js/787.e63222a2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6717e465.css",
+    "static/js/main.99879bd1.js"
+  ]
+}
