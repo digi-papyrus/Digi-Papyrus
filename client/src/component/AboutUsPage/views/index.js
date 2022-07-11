@@ -2,11 +2,11 @@ import React from "react";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import "./AboutUsPage.sass";
 import { Parallax } from "react-parallax";
-import ReferenceCard from "../References/ReferenceCard";
-import nirjal from "../../nirjal.png";
-import team from "../../team.jpg";
-import mahip from "../../mahip.jpg";
-import nigam from "../../nigam.jpg";
+import ReferenceCard from "../../References/views/index";
+import nirjal from "../../../nirjal.png";
+import team from "../../../team.jpg";
+import mahip from "../../../mahip.jpg";
+import nigam from "../../../nigam.jpg";
 import { Link } from "react-router-dom";
 
 

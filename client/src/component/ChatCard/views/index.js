@@ -1,7 +1,7 @@
 import React from "react";
 import "./ChatCard.sass";
-import PhoneDisplayStatic from "../PhoneDisplay/PhoneDisplayStatic";
-import preprocessor from "../../logic/preprocessor";
+import PhoneDisplayStatic from "../../../common/components/PhoneDisplay/views/PhoneDisplayStatic";
+import preprocessor from "../../../common/logic/preprocessor";
 
 export default function ChatCard(prop) {
   return (

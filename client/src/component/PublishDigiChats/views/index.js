@@ -1,8 +1,8 @@
 import React, { useEffect,useState } from "react";
-import PhoneDisplayStatic from "../PhoneDisplay/PhoneDisplayStatic";
+import PhoneDisplayStatic from "../../../common/components/PhoneDisplay/views/PhoneDisplayStatic";
 import "./ChatInput.sass";
 import { Link, useNavigate } from "react-router-dom";
-import preprocessorWhatsapp from "../../logic/preprocessor";
+import preprocessorWhatsapp from "../../../common/logic/preprocessor";
 import axios from "axios";
 
 export default function ChatInput() {

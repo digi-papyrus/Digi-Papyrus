@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./HomePage.sass";
-import ChatCard from "../ChatCard/ChatCard";
+import ChatCard from "../../ChatCard/views/index"
 import { Link, useNavigate } from "react-router-dom";
-import PhoneDisplayStatic from "../PhoneDisplay/PhoneDisplayStatic";
+import PhoneDisplayStatic from "../../../common/components/PhoneDisplay/views/PhoneDisplayStatic";
 import axios from "axios";
 export default function HomePage() {
   const [chats, setChats] = useState([]);

@@ -1,9 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import preprocessor from "../../logic/preprocessor";
-import PhoneDisplayAnimation from "../PhoneDisplay/PhoneDisplayAnimation";
+import preprocessor from "../../../common/logic/preprocessor";
+import PhoneDisplayAnimation from "../../../common/components/PhoneDisplay/views/PhoneDisplayAnimation"
 import { useParams } from "react-router-dom";
-import PhoneDisplayStatic from "../PhoneDisplay/PhoneDisplayStatic";
 
 export default function ChatOutput() {
   const [chat, setChat] = useState("");

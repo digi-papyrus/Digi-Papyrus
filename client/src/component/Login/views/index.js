@@ -1,6 +1,6 @@
 import "./loginstyle.sass";
 import { Link, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 import axios from "axios";
@@ -15,10 +15,48 @@ function Login() {
   const [floatingClass, setFloatingClass] = useState(
     "FloatingComponentActive FloatingComponent"
   );
-  let history = useNavigate();
+  // let history = useNavigate();
 
-  const addtolist = async (e) => {
-    e.preventDefault();
+  // const addtolist = async (e) => {
+  //   e.preventDonstchat = [
+  //   {
+  //     date: "09/12/2021, 9:27 pm",
+  //     sender: "+977 981-6364854",
+  //     text: " Hi Mate! What's Up?😀 ",
+  //     reciever: "+977 981-6364854",
+  //   },
+  //   {
+  //     date: "09/12/2021, 9:27 pm",
+  //     sender: "Nirjal Bhurtel",
+  //     text: " Thank You! All good😁 what about you was just chilling and having fun with Digi !",
+  //   },
+  //   {
+  //     date: "09/12/2021, 9:28 pm",
+  //     sender: "+977 981-6364854",
+  //     text: "Yeah! The animations and digi chat is fun bro! I also enjoy reading it!",
+  //     reciever: "+977 981-6364854",
+  //   },
+  //   {
+  //     date: "09/12/2021, 9:29 pm",
+  //     sender: "Nirjal Bhurtel",
+  //     text: "Yeah mate! Reading books is not same as it used to! I started reading more",
+  //   },
+  //   {
+  //     date: "09/12/2021, 9:29 pm",
+  //     sender: "Nirjal Bhurtel",
+  //     text: " Same here mate! Cheers! For Digi!",
+  //   },
+  // ];
+  // useEffect(() => {
+  //   axios.get("http://localhost:5000/api/fetchChat").then((res) => {
+  //     setChats(res.data);
+      
+  //   });
+  // }, []);
+
+  const history = useNavigate();
+ 
+function addtolist(){
     // url wehre the data should be post
     axios
       .post("/api/register/", {

@@ -1,12 +1,12 @@
 import React from "react";
 import "./App.css";
-import NavigationBar from "./component/NavigationBar/NavigationBar";
-import HomePage from "./component/Homepage/HomePage";
-import AboutUsPage from "./component/AboutUsPage/AboutUsPage";
+import NavigationBar from "./common/components/NavigationBar/views/index.js";
+import HomePage from "./component/Homepage/views/index";
+import AboutUsPage from "./component/AboutUsPage/views/index";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./component/Login/login";
-import ChatInput from "./component/PublishDigiChats/ChatInput";
-import ChatOutput from "./component/ChatOutput/ChatOutput";
+import Login from "./component/Login/views/index";
+import ChatInput from "./component/PublishDigiChats/views/index";
+import ChatOutput from "./component/ChatOutput/views/index";
 function App() {
   return (
     <div className="App">
